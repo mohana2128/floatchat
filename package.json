@@ -1,0 +1,39 @@
+{
+  "name": "floatchat-full-stack",
+  "version": "1.0.0",
+  "description": "AI-powered Ocean Data Analysis Platform",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "start": "docker-compose up",
+    "start:dev": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && pip install -r requirements.txt",
+    "test": "npm run test --prefix frontend",
+    "lint": "npm run lint --prefix frontend",
+    "clean": "docker-compose down -v --remove-orphans"
+  },
+  "keywords": [
+    "ocean-data",
+    "argo",
+    "ai",
+    "nlp",
+    "visualization",
+    "fastapi",
+    "react"
+  ],
+  "author": "FloatChat Team",
+  "license": "MIT",
+  "dependencies": {
+    "@types/leaflet": "^1.9.20",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
+    "vite": "^7.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2"
+  }
+}
